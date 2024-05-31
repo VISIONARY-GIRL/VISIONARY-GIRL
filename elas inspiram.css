@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(40, 3, 70);
+}
+
+
+title.txtinsp{
+color: #e1bcf7;
+}
+
+.insp {
+    color: aliceblue;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode';
+    background-color: #481275;
+}
+
+@media screen and (max-width: 1200px) {
+    .produto-container {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/*CAIXA DE TEXTOS*/
+
+section.habilidades {
+    padding: 40px 4%;
+}
+
+.habilidades .habilidades-box {
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    margin-top: 50px;
+    transition: .2s;
+}
+
+.habilidades .habilidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #a755d6;
+}
+
+.habilidades .habilidades-box h3.roxx {
+    font-size: 40px;
+    margin: 12px 0;
+    color: rgb(166, 134, 216);
+    text-align: center;
+}
+
+h1.txt-sobre-2 {
+    color: #f7d6fa;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+/*------MENU------*/
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: .3s;
+}
+
+.container-menu {
+    position: relative;
+    max-width: 930px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+}
+
+nav {
+    background: #8d45af;
+    position: relative;
+    padding: 18px 18px 18px 18px;
+    z-index: 10;
+}
+
+/*-----estrutura do logo marca-----*/
+
+nav ul {
+    width: 100%;
+    transition: .6s;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #322650;
+
+}
+
+/*-----img-----*/
+
+#dow {
+    display: flex;
+   justify-content: center;
+}
+
+
+/*---------Responsivo-------*/
+
+@media screen and (max-width: 991px) {
+
+    /*-----CLASSE GERAL----*/
+
+    .conteiner {
+        flex-direction: column;
+    }
+
+
+    /*-------Menu-------*/
+
+    .container-menu {
+
+        max-width: 930px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    /*-----------Títulos-----------*/
+
+    h1.txt-sobre-2 {
+        color: #ffffff;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+    /*-----img-----*/
+
+    #dow {
+        display: flex;
+       justify-content: center;
+    }
+}
